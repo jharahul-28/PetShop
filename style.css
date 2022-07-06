@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 25px;
+    font-size: 1.5rem;
+}
+
+nav ul a:hover{
+    background-color: rgb(34, 33, 33);
+}
+
+/* Home Section */
+#secHome{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 0px; */
+    justify-content: center;
+    align-items: center;
+    /* outline: 2px solid black; */
+}
+.homeP{
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#secHome::before{
+    content: "";
+    position: absolute;
+    background: url(img/welcome.jpg) no-repeat center center/cover;
+    height: 300px;
+    width: 300px;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+#secHome .homeP p:nth-child(2){
+    padding-bottom: 95px;
+}
+
+/* pets */
+.row3 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgb(131, 5, 131);
+    color: white;
+    outline: 2px solid black;
+}
+
+.categories{
+    display: flex;
+    /* flex-direction: row; */
+    margin: 10px;
+}
+[class*="c-"]{
+    padding: 8px;
+    margin-left: 5px;
+    border: 3px solid black;
+    border-radius: 13px;
+    background-color: #46cbe6;
+    color: black;
+    text-align: justify;
+}
+
+.c{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    padding-bottom: 4px;
+    font-weight: bolder;
+}
+
+.buynow{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+#btn{
+    background-color: red;
+    border: 3px solid red;
+    border-radius: 8px;
+    font-size: 20px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Our Services */
+.row4 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgb(72, 7, 175);
+    color: white;
+}
+.r4{
+    display: flex;
+    flex-direction: row;
+}
+
+.f-v4{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+}  
+
+.f-v4{
+    background: url(img/veterinary.jpg) no-repeat 0px 44px/cover;
+}
+
+.f-p4{
+    background: url(img/pet\ care.jpg) no-repeat 0px -25px/cover;
+}
+
+[class*="f-"]{
+    padding: 8px;
+    margin: 13px;
+    border: 3px solid black;
+    border-radius: 13px;
+    /* background-color: #d6621f; */
+    color: black;
+    text-align: justify;
+}
+
+/*footer*/
+.cr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.carousel-item img{
+    height: 30vh;
+    width: 30vw;
+}
+
+.pet-carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px ;
+}
