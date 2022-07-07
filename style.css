@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 nav{
     background-color: black;
+}
+
+nav ul{
+    margin-top: 5px;
 }
 
 nav ul a{
@@ -14,20 +19,25 @@ nav ul a{
 }
 
 nav ul a:hover{
-    background-color: rgb(34, 33, 33);
+    color: white;
+    text-shadow: 2px 2px rgba(180, 167, 167, 0.600);
 }
 
 /* Home Section */
 #secHome{
     display: flex;
     flex-direction: column;
-    /* padding-top: 0px; */
     justify-content: center;
     align-items: center;
-    /* outline: 2px solid black; */
 }
+
+#secHome h1{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .homeP{
-    padding-top: 50px;
+    padding-top: 65px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -36,6 +46,7 @@ nav ul a:hover{
     content: "";
     position: absolute;
     background: url(img/welcome.jpg) no-repeat center center/cover;
+    margin-top: 17px;
     height: 300px;
     width: 300px;
     z-index: -1;
@@ -51,7 +62,7 @@ nav ul a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: rgb(131, 5, 131);
     color: white;
     outline: 2px solid black;
@@ -62,6 +73,7 @@ nav ul a:hover{
     /* flex-direction: row; */
     margin: 10px;
 }
+
 [class*="c-"]{
     padding: 8px;
     margin-left: 5px;
@@ -92,6 +104,10 @@ nav ul a:hover{
     border: 3px solid red;
     border-radius: 8px;
     font-size: 20px;
+}
+
+.buynow{
+    padding-top: 5px;
 }
 #btn a{
     text-decoration: none;
@@ -186,5 +202,6 @@ nav ul a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-content: center;
     margin-left: 30px ;
 }
