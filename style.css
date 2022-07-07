@@ -117,7 +117,14 @@ nav ul a:hover{
     text-align: justify;
     align-items: center;
     flex-direction: column;
-}  
+}
+
+.f-p4{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+}
 
 .f-v4{
     background: url(img/veterinary.jpg) no-repeat 0px 44px/cover;
@@ -164,4 +171,19 @@ nav ul a:hover{
     align-items: center;
     justify-content: center;
     margin-left: 30px ;
+}
+
+@media only screen and (max-width:850px){
+    .r4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    [class*="f-"]{
+        background-color: #d6621f;
+    }
+
+    .f{
+        background-image: none;
+    }
 }
