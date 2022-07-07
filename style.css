@@ -144,6 +144,21 @@ nav ul a:hover{
     text-align: justify;
 }
 
+@media only screen and (max-width:850px){
+    .r4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    [class*="f-"]{
+        background-color: #d6621f;
+    }
+
+    .f{
+        background-image: none;
+    }
+}
+
 /*footer*/
 .cr{
     display: flex;
@@ -153,6 +168,7 @@ nav ul a:hover{
     color: white;
 }
 
+/* Carousel */
 .carousel-item img{
     height: 30vh;
     width: 30vw;
@@ -171,19 +187,4 @@ nav ul a:hover{
     align-items: center;
     justify-content: center;
     margin-left: 30px ;
-}
-
-@media only screen and (max-width:850px){
-    .r4{
-        display: flex;
-        flex-direction: column;
-    }
-
-    [class*="f-"]{
-        background-color: #d6621f;
-    }
-
-    .f{
-        background-image: none;
-    }
 }
